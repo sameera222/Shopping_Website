@@ -3,6 +3,10 @@ import Web from "../../assets/Web-Strip.webp";
 import ectotool from "../../assets/ecotools.webp";
 import wefreeman from "../../assets/Web_Freeman.webp";
 import webstrip from "../../assets/Web-EcoTools.webp";
+import Explore from "../../components/Explore/Explore";
+import Brands from "../Brands/Brands";
+import SellingProducts from "../products/SellingProducts";
+import Signup from "../signup/Signup";
 
 const HomePage = () => {
   return (
@@ -68,8 +72,20 @@ const HomePage = () => {
       <div className="flex flex-col items-center justify-center w-full">
         <h4 className="text-4xl tracking-wider font-serif">More to Explore</h4>
       </div>
-
-
+       
+       <div className="flex flex-col items-center justify-center w-full">
+        <Explore/>
+       </div>
+       <div className="flex flex-col items-center justify-center w-full">
+        <Brands/>
+       </div>
+       <div className="flex flex-col items-center justify-center w-full">
+         <SellingProducts/>
+       </div>
+       <hr className="my-4 border-t-1 border-[#e0afa5] w-full"></hr>
+       <div className="flex flex-col items-center justify-center w-full">
+         <Signup/>
+       </div>
     </div>
   );
 };
