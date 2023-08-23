@@ -3,8 +3,6 @@ import { useState } from "react";
 
 const Signup = () => {
     const [email, setEmailAddress] = useState("");
-
-    
   return (
     <div className="flex flex-col items-center justify-center w-full">
       <div className="container mx-auto py-8">
@@ -23,7 +21,6 @@ const Signup = () => {
             />
 
           </label>
-
           <button type="submit" className="bg-[#e0afa5] text-black px-4 py-4 rounded-r text-sm">
             SIGN UP
           </button>
