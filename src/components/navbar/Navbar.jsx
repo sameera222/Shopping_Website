@@ -27,8 +27,8 @@ const Menu = () => (
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className="flex justify-center flex-row items-center px-6 md:px-4 lg:px-2 py-8 bg-[#ffeeec]">
-      <div className="flex md:flex-row flex-col items-center justify-center gap-2">
+    <div className="flex justify-center flex-row items-center px-6 md:px-4 lg:px-2 py-4 bg-[#ffeeec]">
+      <div className="flex md:flex-row flex-col items-center justify-center gap-6">
         <div className="mr-8">
           {toggleMenu ? (
             <img
@@ -46,28 +46,28 @@ function Navbar() {
             />
           )}
         </div>
-        <div className="hidden md:flex gap-4">
+        <div className="hidden md:flex gap-8 text-[14px] font-semibold font-sans">
           <Menu />
         </div>
         <div className="flex flex-col justify-center search relative">
           <CiSearch className="flex absolute left-2 top-1/2 transform -translate-y-1/2" />
           <input
             placeholder="Search"
-            className="border border-gray-400 rounded-lg p-2 text-center items-center justify-center flex w-full"
+            className="border border-white rounded-lg p-2 text-center items-center justify-center flex w-full"
           />
         </div>
       </div>
       <div className="flex items-center">
-        <div className="hidden md:flex flex-row gap-4">
-          <div className="hidden md:flex flex-row gap-4">
-            <BiUser size={25} className="ml-2" />
-            <h6>SIGN IN</h6>
+        <div className="hidden md:flex flex-row gap-6">
+          <div className="hidden md:flex flex-row gap-2">
+            <BiUser size={24} className="ml-2" />
+            <h6 className="text-[14px]"> SIGN IN</h6>
           </div>
           <div>
-            <AiOutlineHeart size={30} />
+            <AiOutlineHeart size={26} />
           </div>
           <div>
-            <HiOutlineShoppingBag size={30} />
+            <HiOutlineShoppingBag size={26} />
           </div>
         </div>
       </div>
